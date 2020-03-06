@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+}
+
+.ordered-list {
+  list-style-type: circle;
+}
+
+//test

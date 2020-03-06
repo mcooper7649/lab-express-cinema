@@ -1,15 +1,18 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
- }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
 
-
 .movieList {
   display: flex;
-}
+  flex-wrap: wrap; }
 
+li {
+  list-style-type: none; }
+
+.ordered-list {
+  list-style-type: circle; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+<div>
+    <img src={{test.image}}/>
+</div>
+<div>
+    <h1>{{test.title}}</h1>
+    <h2>{{test.director}}</h2>
+    <h3>Stars</h3>
+    <ul>
+    {{#each test.stars}}
+    
+        <li class="ordered-list">{{this}}</li>
+    
+    {{/each}}
+    </ul>
+
+    <p>
+        {{test.description}}
+    </p>
+    {{#each test.showtimes}}
+    {{this}} |
+    {{/each}}
+    
+</div>
