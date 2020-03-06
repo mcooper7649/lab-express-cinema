@@ -77,7 +77,7 @@ const movies = [
     }
   ];
 
-  console.log('hye', Movie)
+  
   Movie.insertMany(movies).then(res =>{
       console.log(res)
       mongoose.connection.close()

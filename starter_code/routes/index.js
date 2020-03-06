@@ -13,18 +13,19 @@ router.get('/', (req, res, next) => {
 
 
 router.get('/movies', (req, res, next) => {
-  movie.find({}, {title: 1, _id: 0}).then(movie =>{
+  movie.find({})
+  .then(movie =>{
     console.log(movie)
-    res.render('movies.hbs', {
-      title: movie
-    }).catch(err => {
-      console.log(err)
+    res.render('movies.hbs', {movieTitle: movie})
+  })
+  .catch(err => {
+      console.log("unsuccessful", err)
     })
     
   })
   // res.render('movies.hbs', {
-  //    title: 'Ironhack Cinema',})
-});
+  //    title: 'Ironhack Cinema',})//
+// });
 
 // router.get('/movies', (req, res, next) => {
 //   movie.find().then(res =>{
